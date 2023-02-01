@@ -1,4 +1,18 @@
 console.log ("hello world");
+const open = document.querySelector("ul");
+const container = document.getElementById('pop-up');
+const close = document.querySelector("button");
+
+open.addEventListener('click', () => {
+    container.classList.remove('hidden');
+    container.classList.add('show');
+})
+
+close.addEventListener('click', () => {
+    container.classList.remove('show');
+    container.classList.add('hidden');
+})
+
 
 // fetch the data
 fetch('actors.json')

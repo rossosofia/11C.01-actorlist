@@ -12,21 +12,27 @@
       <h1>Actors</h1>
     </header>
     <main>
-      <ul id="actors-cards">
-        <template id="actors-template">
-          <li>
-            <h2 class="actor-name">Lorem Ipsum</h2>
-            <h3 class="movie">Lorem Ipsum</h3>
-          </li>
-        </template>
-      </ul>
-      <div id="pop-up">
-        <p id="details" class="hidden">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          nulla aut debitis perspiciatis tempore, itaque recusandae provident
-          ea, incidunt ratione enim id numquam in distinctio quaerat! Dolorem
-          consectetur velit illo.
-        </p>
+      <section>
+        <ul id="actors-cards">
+          <template id="actors-template">
+            <li>
+              <h2 class="actor-name">Lorem Ipsum</h2>
+              <h3 class="movie">Lorem Ipsum</h3>
+            </li>
+          </template>
+        </ul>
+      </section>
+      <div id="pop-up" class="hidden">
+        <div class="modal">
+          <h2 class="name-popup">Actor Name</h2>
+          <p id="details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            nulla aut debitis perspiciatis tempore, itaque recusandae provident
+            ea, incidunt ratione enim id numquam in distinctio quaerat! Dolorem
+            consectetur velit illo.
+          </p>
+          <button>Close</button>
+        </div>
       </div>
     </main>
     <footer></footer>

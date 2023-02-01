@@ -4,15 +4,14 @@
 }
 
 body {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
   background-color: #f7f7f9;
 }
 
-.hidden {
-  display: none;
+section {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
 }
-main,
+
 header {
   grid-column: 2/3;
   padding: 2rem 0 2rem 0;
@@ -20,7 +19,8 @@ header {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   font-family: Arial, Helvetica, sans-serif;
   color: #101e29;
 }
@@ -40,7 +40,11 @@ h3 {
   font-weight: lighter;
 }
 
+p {
+  font-size: 0.8rem;
+}
 ul {
+  grid-column: 2/3;
   display: flex;
   flex-flow: row wrap;
   gap: 2rem;
@@ -56,4 +60,37 @@ li {
 
 li:hover {
   box-shadow: 3px 3px 6px lightgray;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.modal {
+  background-color: white;
+  max-width: 20%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px lightgray;
+  text-align: center;
+}
+
+button {
+  background-color: #a0dbf2;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 15px;
+  box-shadow: 1px 1px 2px lightgray;
+  margin-top: 1rem;
 }
